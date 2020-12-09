@@ -13,7 +13,7 @@ export class AppComponent  {
   name = 'Angular ' + VERSION.major;
   elementType = NgxQrcodeElementTypes.URL;
   correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
-  value = 'https://www.techiediaries.com/';
+  value = 'http://qaaliados.berygo.com/';
 
   public downloadQRCode() {
    const fileNameToDownload = 'image_qrcode';
