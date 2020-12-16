@@ -1,18 +1,14 @@
 <h1>
-  Creador de QR's Zippy
+	Creador de QR's Zippy
 </h1>
 <h6> Captura para zippy migue </h6>
-
-
-
-<ngx-qrcode
-  [elementType]="elementType"
-  [errorCorrectionLevel]="correctionLevel"
-  [value]="value"
-  alt="Demo QR Code"
-  cssClass="bshadow"></ngx-qrcode>
-
-<!-- <textarea [(ngModel)] = "value"></textarea> -->
+​
+<label for="table">Zippy-mesa</label>
+<input type="text"[(ngModel)]="table" (ngModelChange)="setUrl()" name="table">
+<ngx-qrcode [elementType]="elementType" [errorCorrectionLevel]="correctionLevel" [value]="value" alt="Demo QR Code"
+	cssClass="bshadow"></ngx-qrcode>
+​
+<textarea [(ngModel)] = "value"></textarea>
 <br><br>
-
+​
 <button (click)="downloadQRCode()">Download QRCode</button>
